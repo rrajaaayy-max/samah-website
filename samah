@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الباحث والأكاديمي سامح عطري</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #d97706;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(217, 119, 6, 0.3);
+        }
+        h1 {
+            font-size: 26px;
+            color: #f1f5f9;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #d97706;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+        }
+        .tags-box {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .tag {
+            background: #0f172a;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+        .btn {
+            display: inline-block;
+            background: #d97706;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 8px;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+        }
+        .btn:hover {
+            background: #b45309;
+        }
+        .btn-email {
+            background: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+        .btn-email:hover {
+            background: #2563eb;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- الصفحة الأولى: التعريف -->
+        <div id="page1">
+            <!-- ملاحظة: استبدلي رابط الصورة أدناه برابط صورتك الحقيقية أو ارفعيها -->
+            <img src="https://i.ibb.co/68v8wG9/samah.jpg" alt="الدكتور سامح عطري" class="profile-img">
+            <h1>الباحث والأكاديمي السوري سامح عطري</h1>
+            <p>هو أكاديمي وباحث سوري-بريطاني متميز، ومتخصص في علوم الذكاء الاصطناعي، وهندسة الحواسيب، والأنظمة الذكية. يمتلك مسيرة علمية وعملية تجمع بين التدريس في الجامعات الدولية وتقديم التدريب التخصصي.</p>
+            
+            <button class="btn" onclick="document.getElementById('page1').style.display='none'; document.getElementById('page2').style.display='block';">اكتشف المزيد / الانتقال</button>
+        </div>
+
+        <!-- الصفحة الثانية: الخبرات والتواصل -->
+        <div id="page2" style="display: none;">
+            <div class="section-title">مجالات الخبرة</div>
+            <div class="tags-box">
+                <div class="tag">أحدث تقنيات التعليم</div>
+                <div class="tag">علوم وتكنولوجيا</div>
+                <div class="tag">أساليب تدريس غير تقليدية</div>
+            </div>
+
+            <div class="section-title">تواصل مع الأكاديمي</div>
+            <div>
+                <a href="https://wa.me/963981905576" target="_blank" class="btn">تواصل عبر واتساب</a>
+                <a href="mailto:rrajaaayy@gmail.com" class="btn btn-email">البريد الإلكتروني</a>
+            </div>
+            
+            <br>
+            <button class="btn" style="background:#475569; font-size:12px; padding:8px 15px;" onclick="document.getElementById('page2').style.display='none'; document.getElementById('page1').style.display='block';">العودة للرئيسية</button>
+        </div>
+
+        <div class="footer">
+            جميع الحقوق محفوظة © الأكاديمي سامح عطري
+        </div>
+    </div>
+
+</body>
+</html>
